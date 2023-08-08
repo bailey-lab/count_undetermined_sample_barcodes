@@ -5,8 +5,9 @@ read1=config['R1']
 suffix=config['suffix']
 
 rule all:
-	yaml_file=output_folder+'/snakemake_params/count_undetermined_barcodes.yaml',
-	counts=expand(output_folder+'/counts/{sample}_barcode_counts.tsv', sample=config['samples'])
+	input:
+		yaml_file=output_folder+'/snakemake_params/count_undetermined_barcodes.yaml',
+		counts=expand(output_folder+'/counts/{sample}_barcode_counts.tsv', sample=config['samples'])
 
 rule copy_files:
 	input:
@@ -31,7 +32,7 @@ rule count_undetermined:
 	barcode counts on read1 files
 	'''
 	input:
-		R1=input_folder+'_{sample}_'+read1+'_'+suffix,
+		R1=input_folder+'/{sample}_'+read1+'_'+suffix,
 	output:
 		counts=output_folder+'/counts/{sample}_barcode_counts.tsv'
 	script:
