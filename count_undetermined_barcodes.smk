@@ -33,6 +33,8 @@ rule count_undetermined:
 	'''
 	input:
 		R1=input_folder+'/{sample}_'+read1+'_'+suffix,
+	params:
+		threshold=config['threshold']
 	output:
 		counts=output_folder+'/counts/{sample}_barcode_counts.tsv'
 	script:

@@ -1,5 +1,6 @@
 input_folder: /nfs/jbailey5/baileyweb/bailey_share/raw_data
 output_folder: /nfs/jbailey5/baileyweb/asimkin/undetermined_sample_barcodes
+threshold: 500
 samples:
   - 230731_nextseq/fastq/Undetermined_S0
   - 211220_nextseq/fastq/Undetermined_S0
