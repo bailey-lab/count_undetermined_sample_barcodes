@@ -1,0 +1,8 @@
+input_folder: /nfs/jbailey5/baileyweb/bailey_share/raw_data
+output_folder: /nfs/jbailey5/baileyweb/asimkin/undetermined_sample_barcodes
+samples:
+  - 230731_nextseq/fastq/Undetermined_S0
+  - 211220_nextseq/fastq/Undetermined_S0
+  - 230503_nextseq/fastq/Undetermined_S0
+R1: R1
+suffix: 001.fastq.gz
