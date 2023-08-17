@@ -1,7 +1,7 @@
 # Count Undetermined Sample Barcodes
 
-Given an 'Undetermined' fastq file, this program tells the user how many
-barcodes of each type were present
+Given an 'Undetermined' fastq file (or several undetermined fastq files), this
+program tells the user how many barcodes of each type were present in each file.
 
 ## Installation:
 Install conda (if you don't already have it, or if you'd like a better conda)
