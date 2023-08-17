@@ -1,9 +1,25 @@
+#name of the parent folder that contains all the files you'd like to analyze
 input_folder: /nfs/jbailey5/baileyweb/bailey_share/raw_data
+
+#folder where output data will go
 output_folder: /nfs/jbailey5/baileyweb/asimkin/undetermined_sample_barcodes
+
+#minimum number of times for a barcode to exist in the undetermined fastq file
+# in order to be considered 'real'
 threshold: 500
+
+#subfolders that contain your files
 samples:
   - 230731_nextseq/fastq/Undetermined_S0
   - 211220_nextseq/fastq/Undetermined_S0
   - 230503_nextseq/fastq/Undetermined_S0
+
+#name given to R1 files - R1 and R2 have identical barcode composition, so only
+#R1 is analyzed. Most sequencers specify R1 and R2 with _R1_ and _R2_, but this
+#variable is in case the sequencer uses _1_ and _2_ or some other string to
+#differentiate between R1 and R2.
 R1: R1
+
+#part coming after the read and sample, e.g. for
+#Undetermined_S0_R1_001.fastq.gz, 001.fastq.gz would be the suffix
 suffix: 001.fastq.gz
