@@ -33,6 +33,7 @@ rule count_undetermined:
 	'''
 	input:
 		R1=input_folder+'/{sample}_'+read1+'_'+suffix,
+		real_barcodes='raw_primers.tab.txt'
 	params:
 		threshold=config['threshold']
 	output:

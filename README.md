@@ -26,7 +26,7 @@ conda create -c conda-forge -c bioconda -n snakemake snakemake
 
 ## Usage:
  - Download the contents of this git repo to a folder on your machine and cd
- into that folder (so that "ls" shows setup_run.smk and finish_run.smk).
+ into that folder (so that "ls" shows count_undetermined_barcodes.smk).
  - Open the count_undetermined_barcodes.yaml file and fill in the variables using
 instructions from the comments
  - Activate snakemake with:
